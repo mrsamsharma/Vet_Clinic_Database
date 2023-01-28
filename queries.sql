@@ -8,7 +8,6 @@ SELECT name, escape_attempts FROM animals WHERE weight_kg > 10.5;
 SELECT * FROM animals WHERE neutered = 't';
 SELECT * FROM animals WHERE name != 'Gabumon';
 SELECT * FROM animals WHERE weight_kg BETWEEN 10.4 AND 17.3 OR weight_kg = 10.4 OR weight_kg = 17.3;
-ALTER TABLE animals ADD species varchar(255);
 BEGIN;
 UPDATE animals SET species = 'unspecified';
 SELECT * FROM animals;
